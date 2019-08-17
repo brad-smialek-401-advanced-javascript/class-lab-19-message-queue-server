@@ -1,13 +1,19 @@
 'use strict';
 
-const Q = require('@nmq/q/server');
-Q.start();
+// Create an instance of a socket server
+const port = process.env.PORT || 3000;
+const io = require('socket.io')(port);
 
-const db = new Q('database');
-db.monitorEvent('create');
-db.monitorEvent('update');
-db.monitorEvent('delete');
+// allow connections
+io.on('connection', (socket) => {
 
-const network = new Q('network');
-network.monitorEvent('attack');
-network.monitorEvent('no-service');
+  console.log('Welcome', socket.id);
+
+  // Subcribe to an event
+  socket.on('speak', (payload) => {
+    console.log('.');
+    // ON that event, send out a message to the world
+    socket.broadcast.emit('the-bird', payload);
+  })
+
+});
