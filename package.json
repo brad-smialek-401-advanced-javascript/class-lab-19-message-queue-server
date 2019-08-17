@@ -1,0 +1,27 @@
+{
+  "name": "q",
+  "version": "1.0.0",
+  "description": "## Project Name Socket.io - Message Queue Server",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@nmq/q": "^1.0.0"
+  },
+  "directories": {
+    "doc": "docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brad-smialek-401-advanced-javascript/class-lab-19-message-queue-server.git"
+  },
+  "bugs": {
+    "url": "https://github.com/brad-smialek-401-advanced-javascript/class-lab-19-message-queue-server/issues"
+  },
+  "homepage": "https://github.com/brad-smialek-401-advanced-javascript/class-lab-19-message-queue-server#readme"
+}
