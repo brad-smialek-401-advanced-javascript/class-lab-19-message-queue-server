@@ -9,7 +9,7 @@ io.on('connection', (socket) => {
 
   console.log('Welcome', socket.id);
 
-  // Subcribe to an event
+  // Subcribe to an event; listening for speak and then emits a string and passes payload to console while console logging a string
   socket.on('speak', (payload) => {
     console.log('.');
     // ON that event, send out a message to the world
