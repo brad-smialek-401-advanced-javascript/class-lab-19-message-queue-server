@@ -7,7 +7,7 @@ Socket.io - Message Queue Server
 ### Author: Brad Smialek
 
 ### Links and Resources
-* [submission PR]()
+* [submission PR](https://github.com/brad-smialek-401-advanced-javascript/class-lab-19-message-queue-server)
 * [AWS](http://socketserver-env.2ixrzi57cy.us-east-2.elasticbeanstalk.com/) 
 
 
